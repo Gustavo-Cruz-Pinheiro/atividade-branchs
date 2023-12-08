@@ -16,6 +16,8 @@
     <label for="numero2">Número 2:</label>
     <input type="number" id="numero2" name="numero2" required>
 
+    <button onclick="multiplicar()">X</button>
+
     <button onclick="somar()">+</button>
 </body>
 
@@ -24,15 +26,20 @@
         var numero1 = document.getElementById("numero1").value;
         var numero2 = document.getElementById("numero2").value;
 
-<<<<<<< HEAD
         var resultado = parseInt(numero1) + parseInt(numero2);
 
         alert("O resultado da soma é: " + resultado);
-=======
-        var resultado = parseInt(numero1) - parseInt(numero2); 
-        
-        alert("O resultado da subtração é: " + resultado);
->>>>>>> feature/subtrair
+    }
+</script>
+
+<script>
+    function multiplicar() {
+        var numero1 = document.getElementById("numero1").value;
+        var numero2 = document.getElementById("numero2").value;
+
+        var resultado = parseInt(numero1) * parseInt(numero2);
+
+        alert("O resultado da multiplicação é: " + resultado);
     }
 </script>
 
